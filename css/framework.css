@@ -2,13 +2,19 @@
 .d-flex {
   display: flex;
 }
-.align-c {
+.align-center {
   align-items: center;
+}
+.w-full {
+  width: 100%;
 }
 /* box end */
 /* padding and margin start  */
 .p-10 {
   padding: 10px;
+}
+.p-15 {
+  padding: 15px;
 }
 .p-20 {
   padding: 20px;
@@ -46,3 +52,10 @@
   position: relative;
 }
 /* position end */
+/* components start  */
+.between-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+/* components end  */
