@@ -13,6 +13,9 @@
 .align-center {
   align-items: center;
 }
+.d-grid {
+  display: grid;
+}
 .w-full {
   width: 100%;
 }
@@ -33,10 +36,16 @@
 .mt-10 {
   margin-top: 10px;
 }
+.gap-20 {
+  gap: 20px;
+}
 /* padding and margin end  */
 /* border start  */
 .rad-6 {
   border-radius: 6px;
+}
+.rad-10 {
+  border-radius: 10px;
 }
 /* border end  */
 /* colors start  */
@@ -67,3 +76,16 @@
   justify-content: space-between;
 }
 /* components end  */
+/* small screens  */
+@media (max-width: 767px) {
+  /* box start  */
+  .block-mobile {
+    display: block;
+  }
+  /* box end */
+  /* start font */
+  .txt-c-mobile {
+    text-align: center;
+  }
+  /* end font */
+}
