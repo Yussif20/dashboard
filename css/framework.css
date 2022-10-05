@@ -16,6 +16,9 @@
 .d-grid {
   display: grid;
 }
+.gap-20 {
+  gap: 20px;
+}
 .w-full {
   width: 100%;
 }
@@ -36,9 +39,7 @@
 .mt-10 {
   margin-top: 10px;
 }
-.gap-20 {
-  gap: 20px;
-}
+
 /* padding and margin end  */
 /* border start  */
 .rad-6 {
