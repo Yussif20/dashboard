@@ -45,8 +45,29 @@
 .p-15 {
   padding: 15px;
 }
+.pt-15 {
+  padding-top: 15px;
+}
+.pb-10 {
+  padding-bottom: 10px;
+}
+.pb-15 {
+  padding-bottom: 15px;
+}
 .p-20 {
   padding: 20px;
+}
+.mt-0 {
+  margin-top: 0;
+}
+.mr-10 {
+  margin-right: 10px;
+}
+.mb-0 {
+  margin-bottom: 0;
+}
+.mb-5 {
+  margin-bottom: 5px;
 }
 .m-20 {
   margin: 20px;
@@ -56,6 +77,9 @@
 }
 .mt-20 {
   margin-top: 20px;
+}
+.mt-25 {
+  margin-top: 25px;
 }
 .mb-20 {
   margin-bottom: 20px;
@@ -105,8 +129,14 @@
 .txt-c {
   text-align: center;
 }
+.fs-13 {
+  font-size: 13px;
+}
 .fs-14 {
   font-size: 14px;
+}
+.fs-15 {
+  font-size: 15px;
 }
 .fw-bold {
   font-weight: bold;

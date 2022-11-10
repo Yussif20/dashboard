@@ -176,7 +176,7 @@ a {
   }
 }
 /* content head end  */
-/* welcome widget start */
+/* Start Welcome Widget */
 .welcome {
   overflow: hidden;
 }
@@ -188,8 +188,8 @@ a {
   width: 64px;
   height: 64px;
   border: 2px solid white;
-  padding: 2px;
   border-radius: 50%;
+  padding: 2px;
   box-shadow: 0 0 5px #ddd;
   margin-left: 20px;
   margin-top: -32px;
@@ -219,18 +219,21 @@ a {
     margin-bottom: 20px;
   }
 }
-/* welcome widget end */
-/* quick draft start  */
+/* End Welcome Widget */
+/* Start Quick Draft Widget */
 .quick-draft textarea {
   resize: none;
   min-height: 180px;
 }
 .quick-draft .save {
-  cursor: pointer;
-  transition: 0.3s;
   margin-left: auto;
+  transition: 0.3s;
+  cursor: pointer;
 }
-/* quick draft end */
+.quick-draft .save:hover {
+  background-color: var(--blue-alt-color);
+}
+/* End Quick Draft Widget */
 /* Start Targets */
 .targets .target-row .icon {
   width: 80px;
@@ -290,14 +293,120 @@ a {
   background-color: rgb(34 197 94 / 20%);
 }
 /* End Targets */
-/* Tickets start  */
+/* Start Tickets */
 .tickets .box {
-  border: 1px solid#ccc;
+  border: 1px solid #ccc;
   width: calc(50% - 10px);
 }
 @media (max-width: 767px) {
   .tickets .box {
-    width: calc(100%);
+    width: 100%;
   }
 }
-/* Tickets start  */
+/* End Tickets */
+/* Start Latest News */
+.latest-news .news-row:not(:last-of-type) {
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #eee;
+}
+.latest-news .news-row img {
+  width: 100px;
+  border-radius: 6px;
+  margin-right: 15px;
+}
+.latest-news .info {
+  flex-grow: 1;
+}
+.latest-news .info h3 {
+  margin: 0 0 6px;
+  font-size: 16px;
+}
+@media (max-width: 767px) {
+  .latest-news .news-row {
+    display: block;
+  }
+  .latest-news .news-row .label {
+    margin: 10px auto;
+    width: fit-content;
+  }
+}
+/* End Latest News */
+/* Start Tasks */
+.tasks .task-row:not(:last-of-type) {
+  margin-bottom: 15px;
+  padding-bottom: 15px;
+  border-bottom: 1px solid #eee;
+}
+.tasks .info {
+  flex-grow: 1;
+}
+.tasks .done {
+  opacity: 0.3;
+}
+.tasks .done h3,
+.tasks .done p {
+  text-decoration: line-through;
+}
+.tasks .delete {
+  cursor: pointer;
+  transition: 0.3s;
+}
+.tasks .delete:hover {
+  color: var(--red-color);
+}
+/* End Tasks */
+/* Start Latest Uploads */
+.latest-uploads ul li:not(:last-child) {
+  border-bottom: 1px solid #eee;
+}
+.latest-uploads ul li img {
+  width: 40px;
+  height: 40px;
+}
+/* End Latest Uploads */
+/* Start Last Project */
+.last-project ul::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  width: 2px;
+  height: 100%;
+  background-color: var(--blue-color);
+}
+.last-project ul li::before {
+  content: "";
+  width: 20px;
+  height: 20px;
+  display: block;
+  border-radius: 50%;
+  background-color: white;
+  border: 2px solid white;
+  outline: 2px solid var(--blue-color);
+  margin-right: 15px;
+  z-index: 1;
+}
+.last-project ul li.done::before {
+  background-color: var(--blue-color);
+}
+.last-project ul li.current::before {
+  animation: change-color 0.8s infinite alternate;
+}
+.last-project .launch-icon {
+  position: absolute;
+  width: 160px;
+  right: 0;
+  bottom: 0;
+  opacity: 0.1;
+}
+/* End Last Project */
+/* animation start  */
+@keyframes change-color {
+  from {
+    background-color: var(--blue-color);
+  }
+  to {
+    background-color: white;
+  }
+}
+/* animation end */
