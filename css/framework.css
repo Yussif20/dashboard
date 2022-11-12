@@ -127,6 +127,15 @@
 .bg-blue {
   background-color: var(--blue-color);
 }
+.bg-green {
+  background-color: var(--green-color);
+}
+.bg-red {
+  background-color: var(--red-color);
+}
+.bg-orange {
+  background-color: var(--orange-color);
+}
 .c-black {
   color: black;
 }
