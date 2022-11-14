@@ -518,6 +518,21 @@ a {
   font-size: 13px;
 }
 /* End Projects Table */
+/* start settings   */
+.toggle-checkbox {
+  -webkit-appearance: none;
+  appearance: none;
+}
+.toggle-switch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+/* end settings   */
 /* animation start  */
 @keyframes change-color {
   from {
