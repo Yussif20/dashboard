@@ -539,6 +539,25 @@ a {
   display: inline-flex;
   width: calc(100% - 80px);
 }
+.settings-page .social-boxes i {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+}
+.settings-page .social-boxes input {
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ccc;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
+}
+.settings-page .social-boxes > div:focus-within .twitter-icon {
+  color: red;
+}
 .toggle-checkbox {
   -webkit-appearance: none;
   appearance: none;
