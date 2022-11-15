@@ -40,6 +40,9 @@
 .b-none {
   border: none;
 }
+.border-ccc {
+  border: 1px solid #ccc;
+}
 /* box end */
 /* padding and margin start  */
 .p-10 {
