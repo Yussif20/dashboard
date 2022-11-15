@@ -539,6 +539,19 @@ a {
   display: inline-flex;
   width: calc(100% - 80px);
 }
+.settings-page .sec-box {
+  padding-bottom: 24px;
+}
+.settings-page .sec-box .button {
+  transition: 0.3s;
+}
+.settings-page .sec-box .button:hover {
+  background-color: var(--blue-alt-color);
+}
+
+.settings-page .sec-box:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
 .settings-page .social-boxes i {
   width: 40px;
   height: 40px;
@@ -556,7 +569,16 @@ a {
   border-radius: 0 6px 6px 0;
 }
 .settings-page .social-boxes > div:focus-within .twitter-icon {
-  color: red;
+  color: #1da1f2;
+}
+.settings-page .social-boxes > div:focus-within .facebook-icon {
+  color: #1877f2;
+}
+.settings-page .social-boxes > div:focus-within .linkedin-icon {
+  color: #0077b5;
+}
+.settings-page .social-boxes > div:focus-within .youtube-icon {
+  color: #ff0000;
 }
 .toggle-checkbox {
   -webkit-appearance: none;
@@ -596,6 +618,11 @@ a {
   left: 50px;
   color: var(--blue-color);
   content: "\f00c";
+}
+.settings-page :disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
 }
 /* end settings   */
 /* animation start  */
