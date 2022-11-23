@@ -1099,6 +1099,10 @@ a {
 .files-page .files-content .file:hover img {
   transform: rotate(5deg);
 }
+.files-page .files-content .file:hover i {
+  color: var(--blue-color);
+  transition: 0.3s;
+}
 .files-page .files-content .info {
   border-top: 1px solid #eee;
 }
@@ -1161,6 +1165,18 @@ a {
   color: var(--grey-color);
   margin-left: auto;
   cursor: pointer;
+}
+.plans-page .link-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans-page .p-container {
+  padding: 16px 32px;
+}
+
+.plans-page .plan a {
+  padding: 16px 32px;
 }
 /* End Plans Page */
 /* animation start  */
